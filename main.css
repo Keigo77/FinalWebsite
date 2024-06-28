@@ -19,10 +19,21 @@ img{
 
 /*画面遷移ボタン*/
 button{
+    display: flex;
+    /*flexで並べたものを横向きに位置調節(ここでは2つを左右の端に配置)*/
+    justify-content: space-between;
+    /*flexで並べたものを縦向きに位置調節*/
+    align-items: center;
     font-size: 30px;
     background-color: rgb(189, 255, 255);
-    width: 30vw;
-    height: 100px;
+    width: 40vw;
+    height: 130px;
+    object-fit: contain;
+}
+
+.buttonImage{
+    width: 200px;
+    height: 200px;
     object-fit: contain;
 }
 
@@ -36,3 +47,6 @@ h2{
 newsList{
     font-size: 20px;
 }
+
+
+
