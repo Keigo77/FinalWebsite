@@ -1,0 +1,52 @@
+/*ヘッダー*/
+header{
+    background-color: rgb(107, 107, 255);
+    width: 100vw;
+    height: 100px;
+}
+
+/*大会要項*/
+h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 60px;
+}
+/*区切り<>*/
+h3{
+    color: rgb(96, 96, 255);
+    font-size: 20px;
+}
+
+/*本文*/
+body{
+    color: rgb(62, 62, 62);
+    font-size: 15px;
+}
+
+/*フッター*/
+footer{
+    background-color: rgb(176, 176, 176);
+    margin-top: 100px;
+    color: white;
+}
+
+/*画面遷移ボタン*/
+button{
+    display: flex;
+    /*flexで並べたものを横向きに位置調節(ここでは2つを左右の端に配置)*/
+    justify-content: space-between;
+    /*flexで並べたものを縦向きに位置調節*/
+    align-items: center;
+    font-size: 30px;
+    background-color: rgb(189, 255, 255);
+    width: 40vw;
+    height: 130px;
+    object-fit: contain;
+}
+
+/*ボタンについてる画像*/
+.buttonImage{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
