@@ -1,9 +1,9 @@
-html, body{
+html,body{
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+    overflow: hidden;
 }
-
 /*タイトル*/
 h1{
     color:rgb(28, 92, 254);
