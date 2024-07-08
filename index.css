@@ -176,7 +176,7 @@ button{
 
 
 /*フッター*/
-footer{
+.footerTable{
     background-color: rgb(176, 176, 176);
     margin-top: 100px;
     color: white;
