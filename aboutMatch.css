@@ -46,6 +46,14 @@ button{
     object-fit: contain;
 }
 
+
+/*ボタンについてる画像*/
+.buttonImage{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
 /*レスポンシブデザイン*/
 @media (max-width:600px){
     h1{
@@ -58,7 +66,7 @@ button{
         display: grid;
         width: 150px;
         height: 150px;
-        font-size: 20px;
+        font-size: 15px;
     }
 
     /*ボタンについてる画像*/
@@ -67,15 +75,5 @@ button{
         height: 100px;
         object-fit: contain;
     }
-    .newsList{
-        font-size: 10px;
-        line-height: 1.7;
-    }
 }
 
-/*ボタンについてる画像*/
-.buttonImage{
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-}

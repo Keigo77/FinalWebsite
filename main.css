@@ -31,32 +31,7 @@ button{
     object-fit: contain;
 }
 
-/*レスポンシブデザイン*/
-@media (max-width:600px){
-    h1{
-        font-size: 25px;
-    }
 
-    button{
-        /*写真と文字を縦に並べる*/
-        justify-content: center;
-        display: grid;
-        width: 150px;
-        height: 150px;
-        font-size: 20px;
-    }
-
-    /*ボタンについてる画像*/
-    .buttonImage{
-        width: 100px;
-        height: 100px;
-        object-fit: contain;
-    }
-    .newsList{
-        font-size: 10px;
-        line-height: 1.7;
-    }
-}
 
 /*ボタンについてる画像*/
 .buttonImage{
@@ -78,5 +53,31 @@ h2{
     line-height: 1.7;
 }
 
+/*レスポンシブデザイン*/
+@media (max-width:600px){
+    h1{
+        font-size: 25px;
+    }
+
+    button{
+        /*写真と文字を縦に並べる*/
+        justify-content: center;
+        display: grid;
+        width: 150px;
+        height: 150px;
+        font-size: 15px;
+    }
+
+    /*ボタンについてる画像*/
+    .buttonImage{
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+    }
+    .newsList{
+        font-size: 10px;
+        line-height: 1.7;
+    }
+}
 
 
