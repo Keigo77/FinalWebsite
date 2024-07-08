@@ -176,8 +176,19 @@ button{
 
 
 /*フッター*/
-.footerTable{
+.footerTh{
     background-color: rgb(176, 176, 176);
     margin-top: 100px;
     color: white;
+    border: initial;
+    padding: initial;
+    text-align: initial;
 }
+
+.footerTable{
+    width: initial;
+    border-collapse: initial;
+    margin-top: initial;
+}
+
+
