@@ -107,3 +107,35 @@ details summary::after {
     margin-right: 10px;
     color: #0056b3;
 }
+
+/* メディアクエリー*/
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    details summary {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .match-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .match-info a {
+        margin-top: 5px;
+    }
+}
