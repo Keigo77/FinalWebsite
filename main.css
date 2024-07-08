@@ -31,6 +31,19 @@ button{
     object-fit: contain;
 }
 
+/*レスポンシブデザイン*/
+@media (max-width:600px){
+    h1{
+        font-size: 30px;
+    }
+
+    button{
+        display: grid;
+        width: 40vw;
+        height: 250px;
+    }
+}
+
 /*ボタンについてる画像*/
 .buttonImage{
     width: 150px;
