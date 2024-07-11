@@ -75,8 +75,8 @@ h2{
         height: 25vw;
         object-fit: contain;
     }
-    .newsList{
-        font-size: 10px;
+    newsList{
+        font-size: 13px;
         line-height: 1.7;
     }
 }
