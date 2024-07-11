@@ -1,9 +1,4 @@
-html,body{
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    overflow: hidden;
-}
+
 /*タイトル*/
 h1{
     color:rgb(28, 92, 254);
@@ -69,15 +64,15 @@ h2{
         /*写真と文字を縦に並べる*/
         justify-content: center;
         display: grid;
-        width: 150px;
-        height: 150px;
+        width: 30vw;
+        height: 50vw;
         font-size: 15px;
     }
 
     /*ボタンについてる画像*/
     .buttonImage{
-        width: 100px;
-        height: 100px;
+        width: 25vw;
+        height: 25vw;
         object-fit: contain;
     }
     .newsList{
