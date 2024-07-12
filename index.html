@@ -1,0 +1,61 @@
+<!doctype html>     <!--ページがどのバージョンで作られているか-->
+<html lang="ja">    <!--Doctypeの宣言後すぐに記述 これはHTMLの文章，日本語ですという意味-->
+    <head>          <!--ページのタイトルや説明文，使用する外部ファイルのリンクなど(ブラウザーには表示されない)-->
+        <meta charset="UTF-8">  <!--文字コードをUTF-8にするという指定．ないと文字化けする-->
+        <title>第102回全国高校サッカー選手権</title>     <!--ページのタイトルを書く．ブラウザのタブや検索時，ブックマーク時に表示される-->
+        <meta name="description" content="第102回全国校区サッカー選手権のHP">  <!--検索に引っかかった時にページと共に表示-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>      <!--コンテンツ-->
+        <h1>第102回全国高校サッカー選手権大会</h1>
+        <h4>2023/12/28(木)〜2023/1/8(月・祝)</h4>
+        <img src="./images/soccerImage.jpg" alt="写真">;
+        <!--画面遷移ボタン-->
+        <table align="center" cellspacing="50">
+            <tr>
+                <th>
+                    <button onclick="location.href='aboutMatch.html'">
+                        <img src="./images/vs.png" alt="写真" class="buttonImage">
+                        大会要項>
+                    </button>
+                </th>
+                <th>
+                    <button onclick="location.href='keigo.html'">
+                        <img src="./images/reward.png" alt="写真" class="buttonImage">
+                        日程・結果>
+                    </button>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <button onclick="location.href='keigo.html'">
+                        <img src="./images/school.jpg" alt="写真" class="buttonImage">
+                        チーム紹介>
+                    </button>
+                </th>
+                <th>
+                    <button onclick="location.href='keigo.html'">
+                        <img src="./images/mappin.png" alt="写真" class="buttonImage">
+                        会場アクセス>
+                    </button>
+                </th>
+            </tr>
+        </table>
+        <!--画面遷移ボタンここまで-->
+
+        <h2>
+            Pickup  News!
+        </h2>
+
+        <!--<pre>で空白がそのまま入る-->
+        <newsList>
+            <pre>2024/06/28     オフセット廃止について<br></pre>
+            <pre>2024/06/28     イナズマイレブン　コラボイベント</pre>
+            <pre>2024/06/20     有名選手が会場にやってくる！</pre>
+        </newsList>
+
+    </body>
+</html>
