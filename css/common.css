@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+
+/* スマートフォン用のスタイル */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 0.5em;
+    }
+    /* ヘッダーのスタイル */
+    header {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1em;
+        text-align: center;
+        font-size: 1.2em;
+        overflow: hidden;  /* オーバーフローを防ぐ */
+    }
+
+    /* フッターのスタイル */
+    footer {
+        padding: 0.5em;
+        text-align: center;
+        font-size: 0.8em;
+    }
+}
