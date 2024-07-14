@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サッカートーナメント日程と結果</title>
+    <link rel="stylesheet" href="css/result.css">
+    <script>
+        function openDetails(id) {
+            document.getElementById(id).open = true;
+            document.getElementById(id).scrollIntoView();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>サッカートーナメント日程と結果</h1>
+    </header>
+
+    <main>
+        <div class="section">
+            <h2>日程</h2>
+            <details>
+                <summary>1回戦目</summary>
+                <div class="details">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>試合</th>
+                                <th>日付</th>
+                                <th>時間</th>
+                                <th>場所</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#match1-result" onclick="openDetails('round1-results')">試合1: 早稲田実 vs 広島国際学院</a></td>
+                                <td>2023年12月28日</td>
+                                <td>15:00</td>
+                                <td>国立競技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match2-result" onclick="openDetails('round1-results')">試合2: 北海 vs 大手前高松</a></td>
+                                <td>2023年12月29日</td>
+                                <td>14:10</td>
+                                <td>ゼットエーオリゼットエーオリプリスタジアム</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match3-result" onclick="openDetails('round1-results')">試合3: 名古屋 vs 日章学園</a></td>
+                                <td>2023年12月29日</td>
+                                <td>12:05</td>
+                                <td>ゼットエーオリゼットエーオリプリスタジアム</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match4-result" onclick="openDetails('round1-results')">試合4: 帝京長岡 vs 長崎総科大附</a></td>
+                                <td>2023年12月29日</td>
+                                <td>14:10</td>
+                                <td>県立柏の葉公園総合競技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match5-result" onclick="openDetails('round1-results')">試合5: 県立船橋 vs 高川</a></td>
+                                <td>2023年12月29日</td>
+                                <td>12:05</td>
+                                <td>県立柏の葉公園総合競技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match6-result" onclick="openDetails('round1-results')">試合6: 静岡学園 vs 明徳義塾</a></td>
+                                <td>2023年12月29日</td>
+                                <td>12:05</td>
+                                <td>浦和駒場スタジアム</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match7-result" onclick="openDetails('round1-results')">試合7: 昌平 vs 奈良育英</a></td>
+                                <td>2023年12月29日</td>
+                                <td>12:05</td>
+                                <td>埼玉スタジアム2002</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match8-result" onclick="openDetails('round1-results')">試合8: 山形明正 vs 米子北</a></td>
+                                <td>2023年12月29日</td>
+                                <td>14:10</td>
+                                <td>埼玉スタジアム2002</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match9-result" onclick="openDetails('round1-results')">試合9: 仙台育英 vs 神戸弘陵学園</a></td>
+                                <td>2023年12月29日</td>
+                                <td>14:10</td>
+                                <td>ニッパツ三ツ沢球技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match10-result" onclick="openDetails('round1-results')">試合10: 前橋育英 vs 立正大淞南</a></td>
+                                <td>2023年12月29日</td>
+                                <td>12:05</td>
+                                <td>ニッパツ三ツ沢球技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match11-result" onclick="openDetails('round1-results')">試合11: 矢坂中央 vs 東海大仰星</a></td>
+                                <td>2023年12月29日</td>
+                                <td>14:10</td>
+                                <td>等々力陸上競技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match12-result" onclick="openDetails('round1-results')">試合12: 明秀日立 vs 徳島市立</a></td>
+                                <td>2023年12月29日</td>
+                                <td>12:05</td>
+                                <td>等々力陸上競技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match13-result" onclick="openDetails('round1-results')">試合13: 帝京第三 vs 初芝橋本</a></td>
+                                <td>2023年12月29日</td>
+                                <td>12:05</td>
+                                <td>駒沢陸上競技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match14-result" onclick="openDetails('round1-results')">試合14: 堀越 vs 今治東</a></td>
+                                <td>2023年12月29日</td>
+                                <td>14:10</td>
+                                <td>駒沢陸上競技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match15-result" onclick="openDetails('round1-results')">試合15: 帝京大可児 vs 柳ヶ浦</a></td>
+                                <td>2023年12月29日</td>
+                                <td>14:10</td>
+                                <td>浦和駒場スタジアム</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match16-result" onclick="openDetails('round1-results')">試合16: 丸岡 vs 佐賀東</a></td>
+                                <td>2023年12月29日</td>
+                                <td>12:05</td>
+                                <td>味の素フィールド西が丘</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </details>
+            <details>
+                <summary>2回戦目</summary>
+                <div class="details">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>試合</th>
+                                <th>日付</th>
+                                <th>時間</th>
+                                <th>場所</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#match17-result" onclick="openDetails('round2-results')">試合17: 岡山学芸館 vs 尚志</a></td>
+                                <td>2023年12月31日</td>
+                                <td>14:10</td>
+                                <td>県立柏の葉公園総合競技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match18-result" onclick="openDetails('round2-results')">試合18: 北海 vs 名古屋</a></td>
+                                <td>2023年12月05日</td>
+                                <td>20:00</td>
+                                <td>福岡スタジアム</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match19-result" onclick="openDetails('round2-results')">試合19: 帝京長岡 vs 市立船橋</a></td>
+                                <td>2023年12月31日</td>
+                                <td>14:10</td>
+                                <td>ゼットエーオリゼットエーオリプリスタジアム</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match20-result" onclick="openDetails('round2-results')">試合20: 星稜 vs 四日市中央工</a></td>
+                                <td>2023年12月31日</td>
+                                <td>14:10</td>
+                                <td>ゼットエーオリゼットエーオリプリスタジアム</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match21-result" onclick="openDetails('round2-results')">試合21: 青森山田 vs 飯塚</a></td>
+                                <td>2023年12月31日</td>
+                                <td>12:05</td>
+                                <td>浦和駒場スタジアム</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match22-result" onclick="openDetails('round2-results')">試合22: 広島国際学院 vs 静岡学園</a></td>
+                                <td>2023年12月31日</td>
+                                <td>14:10</td>
+                                <td>浦和駒場スタジアム</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match23-result" onclick="openDetails('round2-results')">試合23: 昌平 vs 米子北</a></td>
+                                <td>2023年12月31日</td>
+                                <td>12:05</td>
+                                <td>埼玉スタジアム2002</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match24-result" onclick="openDetails('round2-results')">試合24: 遠野 vs 大津</a></td>
+                                <td>2024年7月11日</td>
+                                <td>20:00</td>
+                                <td>ニッパツ三ツ沢球技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match25-result" onclick="openDetails('round2-results')">試合25: 神村学園 vs 松本国際</a></td>
+                                <td>2023年12月31日</td>
+                                <td>12:05</td>
+                                <td>ニッパツ三ツ沢球技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match26-result" onclick="openDetails('round2-results')">試合26: 神戸弘陵学園 vs 前橋育英</a></td>
+                                <td>2023年12月31日</td>
+                                <td>12:05</td>
+                                <td>ニッパツ三ツ沢球技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match27-result" onclick="openDetails('round2-results')">試合27: 東海大仰星 vs 明秀日立</a></td>
+                                <td>2023年12月31日</td>
+                                <td>12:05</td>
+                                <td>等々力陸上競技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match28-result" onclick="openDetails('round2-results')">試合28: 日大藤沢 vs 近江</a></td>
+                                <td>2023年12月31日</td>
+                                <td>14:10</td>
+                                <td>等々力陸上競技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match29-result" onclick="openDetails('round2-results')">試合29: 明桜 vs 名護</a></td>
+                                <td>2023年12月31日</td>
+                                <td>14:10</td>
+                                <td>駒沢陸上競技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match30-result" onclick="openDetails('round2-results')">試合30: 初芝橋本 vs 堀越</a></td>
+                                <td>2023年12月31日</td>
+                                <td>12:05</td>
+                                <td>駒沢陸上競技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match31-result" onclick="openDetails('round2-results')">試合31: 帝京大可児 vs 佐賀東</a></td>
+                                <td>2023年12月31日</td>
+                                <td>14:10</td>
+                                <td>味の素フィールド西が丘</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match32-result" onclick="openDetails('round2-results')">試合32: 富山第一 vs 京都橘</a></td>
+                                <td>2023年12月31日</td>
+                                <td>12:05</td>
+                                <td>味の素フィールド西が丘</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </details>
+            <details>
+                <summary>3回戦目</summary>
+                <div class="details">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>試合</th>
+                                <th>日付</th>
+                                <th>時間</th>
+                                <th>場所</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#match33-result" onclick="openDetails('round3-results')">試合33: 岡山学芸館 vs 名古屋</a></td>
+                                <td>2024年1月2日</td>
+                                <td>14:10</td>
+                                <td>県立柏の葉公園総合競技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match34-result" onclick="openDetails('round3-results')">試合34: 市立船橋 vs 星稜</a></td>
+                                <td>2024年1月2日</td>
+                                <td>12:05</td>
+                                <td>県立柏の葉公園総合競技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match35-result" onclick="openDetails('round3-results')">試合35: 青森山田 vs 広島国際学院</a></td>
+                                <td>2024年1月2日</td>
+                                <td>14:10</td>
+                                <td>浦和駒場スタジアム</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match36-result" onclick="openDetails('round3-results')">試合36: 昌平 vs 大津</a></td>
+                                <td>2024年1月2日</td>
+                                <td>12:05</td>
+                                <td>浦和駒場スタジアム</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match37-result" onclick="openDetails('round3-results')">試合37: 神村学園 vs 神戸弘陵学園</a></td>
+                                <td>2024年1月2日</td>
+                                <td>14:10</td>
+                                <td>等々力陸上競技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match38-result" onclick="openDetails('round3-results')">試合38: 明秀日立 vs 近江</a></td>
+                                <td>2024年1月2日</td>
+                                <td>12:05</td>
+                                <td>等々力陸上競技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match39-result" onclick="openDetails('round3-results')">試合39: 明桜 vs 堀越</a></td>
+                                <td>2024年7月11日</td>
+                                <td>14:10</td>
+                                <td>駒沢陸上競技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match40-result" onclick="openDetails('round3-results')">試合40: 佐賀東 vs 富山第一</a></td>
+                                <td>2024年1月2日</td>
+                                <td>12:05</td>
+                                <td>駒沢陸上競技場</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </details>
+            <details>
+                <summary>準々決勝</summary>
+                <div class="details">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>試合</th>
+                                <th>日付</th>
+                                <th>時間</th>
+                                <th>場所</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#match41-result" onclick="openDetails('round4-results')">試合41: 名古屋 vs 県立船橋</a></td>
+                                <td>2024年1月4日</td>
+                                <td>12:05</td>
+                                <td>県立柏の葉公園総合競技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match42-result" onclick="openDetails('round4-results')">試合42: 青森山田 vs 昌平</a></td>
+                                <td>2024年1月4日</td>
+                                <td>12:05</td>
+                                <td>浦和駒場スタジアム</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match43-result" onclick="openDetails('round4-results')">試合43: 神村学園 vs 近江</a></td>
+                                <td>2024年1月4日</td>
+                                <td>14:10</td>
+                                <td>浦和駒場スタジアム</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match44-result" onclick="openDetails('round4-results')">試合44: 堀越 vs 佐賀東</a></td>
+                                <td>2024年1月4日</td>
+                                <td>14:10</td>
+                                <td>県立柏の葉公園総合競技場</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </details>
+            <details>
+                <summary>準決勝</summary>
+                <div class="details">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>試合</th>
+                                <th>日付</th>
+                                <th>時間</th>
+                                <th>場所</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#match45-result" onclick="openDetails('round5-results')">試合45: 県立船橋 vs 青森山田</a></td>
+                                <td>2024年1月6日</td>
+                                <td>12:05</td>
+                                <td>国立競技場</td>
+                            </tr>
+                            <tr>
+                                <td><a href="#match46-result" onclick="openDetails('round5-results')">試合46: 近江 vs 堀越</a></td>
+                                <td>2024年7月11日</td>
+                                <td>14:20</td>
+                                <td>国立競技場</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </details>
+            <details>
+                <summary>決勝</summary>
+                <div class="details">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>試合</th>
+                                <th>日付</th>
+                                <th>時間</th>
+                                <th>場所</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#match47-result" onclick="openDetails('round6-results')">試合47: 青森山田 vs 近江</a></td>
+                                <td>2024年1月8日</td>
+                                <td>14:05</td>
+                                <td>国立競技場</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </details>
+
+        </div>
+
+        <div class="section">
+            <h2>結果</h2>
+            <details id="round1-results">
+                <summary>1回戦目</summary>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>試合</th>
+                            <th>結果</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="match1-result">
+                            <td>試合1: 早稲田実 vs 広島国際学院</td>
+                            <td>早稲田実 0 - 2 広島国際学院</td>
+                        </tr>
+                        <tr id="match2-result">
+                            <td>試合2: 北海 vs 大手前高松</td>
+                            <td>北海 1 - 1 大手前高松<br>
+                                PK:6-5
+                            </td>
+
+                        </tr>
+                        <tr id="match3-result">
+                            <td>試合3: 名古屋 vs 日章学園</td>
+                            <td>名古屋 1 - 1 日章学園</td>
+                        </tr>
+                        <tr id="match4-result">
+                            <td>試合4: 帝京長岡 vs 長崎総科大附</td>
+                            <td>帝京長岡 3 - 2 長崎総科大附</td>
+                        </tr>
+                        <tr id="match5-result">
+                            <td>試合5: 市立船橋 vs 高川学園</td>
+                            <td>市立船橋 4 - 1 高川学園</td>
+                        </tr>
+                        <tr id="match6-result">
+                            <td>試合6: 静岡学園 vs 名徳義塾</td>
+                            <td>静岡学園 6 - 0 明徳義塾</td>
+                        </tr>
+                        <tr id="match7-result">
+                            <td>試合7: 昌平 vs 奈良育英</td>
+                            <td>昌平 7 - 0 奈良育英</td>
+                        </tr>
+                        <tr id="match8-result">
+                            <td>試合8: 山形明正 vs 米子北</td>
+                            <td>山形明正 0 - 4 米子北</td>
+                        </tr>
+                        <tr id="match9-result">
+                            <td>試合9: 仙台育英 vs 神戸弘陵学園</td>
+                            <td>仙台育英 0 - 4 神戸弘陵学園</td>
+                        </tr>
+                        <tr id="match10-result">
+                            <td>試合10: 前橋育英 vs 立正大淞南</td>
+                            <td>前橋育英 3 - 1 立正大淞南</td>
+                        </tr>
+                        <tr id="match11-result">
+                            <td>試合11: 矢坂中央 vs 東海大仰星</td>
+                            <td>矢坂中央 0 - 1 東海大仰星</td>
+                        </tr>
+                        <tr id="match12-result">
+                            <td>試合12: 明秀日立 vs 徳島市立</td>
+                            <td>名徳義塾 2 - 0 徳島市立</td>
+                        </tr>
+                        <tr id="match13-result">
+                            <td>試合13: 帝京第三 vs 初芝橋本</td>
+                            <td>帝京第三 2 - 3 初芝橋本</td>
+                        </tr>
+                        <tr id="match14-result">
+                            <td>試合14: 堀越 vs 今治東</td>
+                            <td>堀越 3 - 2 今治東</td>
+                        </tr>
+                        <tr id="match15-result">
+                            <td>試合15: 帝京大可児 vs 柳ヶ浦</td>
+                            <td>帝京第三 2 - 1 柳ヶ浦</td>
+                        </tr>
+                        <tr id="match16-result">
+                            <td>試合16: 丸岡 vs 佐賀東</td>
+                            <td>丸岡 0 - 1 佐賀東</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </details>
+            <details id="round2-results">
+                <summary>2回戦目</summary>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>試合</th>
+                            <th>結果</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="match17-result">
+                            <td>試合17: 岡山学芸館 vs 尚志</td>
+                            <td>岡山学芸館 2 - 1 尚志 (PK 4-3)</td>
+                        </tr>
+                        <tr id="match18-result">
+                            <td>試合18: 北海 vs 名古屋</td>
+                            <td>北海 0 - 3 名古屋</td>
+                        </tr>
+                        <tr id="match19-result">
+                            <td>試合19: 帝京長岡 vs 市立船橋</td>
+                            <td>帝京長岡 1 - 1 市立船橋</td>
+                        </tr>
+                        <tr id="match20-result">
+                            <td>試合20: 星稜 vs 四日市中央工</td>
+                            <td>星稜 1 - 1 四日市中央工</td>
+                        </tr>
+                        <tr id="match21-result">
+                            <td>試合21: 青森山田 vs 飯塚</td>
+                            <td>青森山田 1 - 1 飯塚</td>
+                        </tr>
+                        <tr id="match22-result">
+                            <td>試合22: 広島国際学院 vs 静岡学園</td>
+                            <td>広島国際学院 1 - 1 静岡学園</td>
+                        </tr>
+                        <tr id="match23-result">
+                            <td>試合23: 昌平 vs 米子北</td>
+                            <td>昌平 1 - 1 米子北</td>
+                        </tr>
+                        <tr id="match24-result">
+                            <td>試合24: 遠野 vs 大津</td>
+                            <td>遠野 0 - 1 大津</td>
+                        </tr>
+                        <tr id="match25-result">
+                            <td>試合25: 神村学園 vs 松本国際</td>
+                            <td>神村学園 2 - 0 松本国際</td>
+                        </tr>
+                        <tr id="match26-result">
+                            <td>試合26: 神戸弘陵学園 vs 前橋育英</td>
+                            <td>神戸弘陵学園 2 - 0 前橋育英</td>
+                        </tr>
+                        <tr id="match27-result">
+                            <td>試合27: 東海大仰星 vs 明秀日立</td>
+                            <td>東海大仰星 1 - 1 明秀日立</td>
+                        </tr>
+                        <tr id="match28-result">
+                            <td>試合28: 日大藤沢 vs 近江</td>
+                            <td>日大藤沢 1 - 1 近江</td>
+                        </tr>
+                        <tr id="match29-result">
+                            <td>試合29: 明桜 vs 名護</td>
+                            <td>明桜 2 - 0 名護</td>
+                        </tr>
+                        <tr id="match30-result">
+                            <td>試合30: 初芝橋本 vs 堀越</td>
+                            <td>初芝橋本 0 - 0 堀越</td>
+                        </tr>
+                        <tr id="match31-result">
+                            <td>試合31: 帝京大可児 vs 佐賀東</td>
+                            <td>帝京大可児 1 - 3 佐賀東</td>
+                        </tr>
+                        <tr id="match32-result">
+                            <td>試合32: 富山第一 vs 京都橘</td>
+                            <td>富山第一 2 - 1 京都橘</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </details>
+            <details id="round3-results">
+                <summary>3回戦目</summary>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>試合</th>
+                            <th>結果</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="match33-result">
+                            <td>試合33: 岡山学芸館 vs 名古屋</td>
+                            <td>市立船橋 1 - 1 名古屋</td>
+                        </tr>
+                        <tr id="match34-result">
+                            <td>試合34: 市立船橋 vs 星稜</td>
+                            <td>市立船橋 4 - 1 星稜</td>
+                        </tr>
+                        <tr id="match35-result">
+                            <td>試合35: 青森山田 vs 広島国際学院</td>
+                            <td>青森山田 7 - 0 広島国際学院</td>
+                        </tr>
+                        <tr id="match36-result">
+                            <td>試合36: 昌平 vs 大津</td>
+                            <td>昌平 2 - 2 大津</td>
+                        </tr>
+                        <tr id="match37-result">
+                            <td>試合37: 神村学園 vs 神戸弘陵学園</td>
+                            <td>神村学園 2 - 1 神戸弘陵学園</td>
+                        </tr>
+                        <tr id="match38-result">
+                            <td>試合38: 明秀日立 vs 近江</td>
+                            <td>明秀日立 1 - 1 近江</td>
+                        </tr>
+                        <tr id="match39-result">
+                            <td>試合39: 明桜 vs 堀越</td>
+                            <td>明桜 0 - 1 堀越</td>
+                        </tr>
+                        <tr id="match40-result">
+                            <td>試合40: 佐賀東 vs 富山第一</td>
+                            <td>佐賀東 5 - 1 富山第一</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </details>
+            <details id="round4-results">
+                <summary>準々決勝</summary>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>試合</th>
+                            <th>結果</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="match41-result">
+                            <td>試合41: 名古屋 vs 市立船橋</td>
+                            <td>名古屋 1 - 2 市立船橋</td>
+                        </tr>
+                        <tr id="match42-result">
+                            <td>試合42: 青森山田 vs 尚志</td>
+                            <td>青森山田 4 - 0 尚志</td>
+                        </tr>
+                        <tr id="match43-result">
+                            <td>試合43: 神村学園 vs 近江</td>
+                            <td>神村学園 3 - 4 近江</td>
+                        </tr>
+                        <tr id="match44-result">
+                            <td>試合44: 堀越 vs 佐賀東</td>
+                            <td>堀越 2 - 1 佐賀東</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </details>
+            <details id="round5-results">
+                <summary>準決勝</summary>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>試合</th>
+                            <th>結果</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="match45-result">
+                            <td>試合45: 市立船橋 vs 青森山田</td>
+                            <td>市立船橋 1 - 1 青森山田</td>
+                        </tr>
+                        <tr id="match46-result">
+                            <td>試合46: 近江 vs 堀越</td>
+                            <td>近江 2 - 1 堀越</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </details>
+            <details id="round6-results">
+                <summary>決勝</summary>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>試合</th>
+                            <th>結果</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="match47-result">
+                            <td>試合47: 青森山田 vs 近江</td>
+                            <td>青森山田 3 - 1 近江</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </details>
+        </div>
+    </main>
+    
+    <!--フッターーーー-->
+    <footer>
+        <table id="footerTable" align="center" cellspacing="50">
+            <tr>
+                <th class="footerTh">
+                    <button onclick="location.href='index.html'">
+                        <img src="images/return.png" alt="写真" class="buttonImage">
+                        ホーム画面に戻る>
+                    </button>
+                </th>
+                <th class="footerTh">
+                    <button onclick="location.href='aboutMatch.html'">
+                        <img src="images/vs.png" alt="写真" class="buttonImage">
+                        大会要項>
+                    </button>
+                </th>
+            </tr>
+            <tr>
+                <th class="footerTh">
+                    <button onclick="location.href='final-web-teams.html'">
+                        <img src="images/school.jpg" alt="写真" class="buttonImage">
+                        チーム紹介>
+                    </button>
+                </th>
+                <th class="footerTh">
+                    <button onclick="location.href='venue.html'">
+                        <img src="images/mappin.png" alt="写真" class="buttonImage">
+                        会場アクセス>
+                    </button>
+                </th>
+            </tr>
+        </table>
+    </footer>
+
+</body>
+</html>

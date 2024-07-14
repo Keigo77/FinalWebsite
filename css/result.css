@@ -1,0 +1,209 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(90deg, #0056b3, #0099ff);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+main {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.details {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+details summary {
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+details summary:hover {
+    background-color: #004080;
+}
+
+details[open] summary::after {
+    content: "▲";
+    float: right;
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+
+details summary::after {
+    content: "▼";
+    float: right;
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+
+.match-info {
+    margin: 10px 0;
+    padding: 10px;
+    background: #e7f3ff;
+    border-left: 5px solid #0056b3;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.match-info a {
+    flex: 1;
+}
+
+.match-info::before {
+    content: "⚽";
+    margin-right: 10px;
+    color: #0056b3;
+}
+
+
+
+
+/*画面遷移ボタン*/
+button{
+    display: flex;
+    /*flexで並べたものを横向きに位置調節(ここでは2つを左右の端に配置)*/
+    justify-content: space-between;
+    /*flexで並べたものを縦向きに位置調節*/
+    align-items: center;
+    font-size: 30px;
+    background-color: rgb(189, 255, 255);
+    width: 40vw;
+    height: 130px;
+    object-fit: contain;
+}
+
+
+
+/*ボタンについてる画像*/
+.buttonImage{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+
+/*フッター*/
+.footerTh{
+    background-color: rgb(176, 176, 176);
+    margin-top: 100px;
+    color: white;
+    border: initial;
+    padding: initial;
+    text-align: initial;
+}
+
+#footerTable{
+    width: initial;
+    border-collapse: initial;
+    margin-top: initial;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* メディアクエリー*/
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    details summary {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .match-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .match-info a {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width:600px){
+    h1{
+        font-size: 25px;
+    }
+
+    button{
+        justify-content: center;
+        display: grid;
+        width: 35vw;
+        height: 50vw;
+        font-size: 15px;
+    }
+
+    /*ボタンについてる画像*/
+    .buttonImage{
+        width: 25vw;
+        height: 25vw;
+        object-fit: contain;
+    }
+}
+
+
