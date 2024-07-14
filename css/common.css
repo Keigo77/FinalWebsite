@@ -16,6 +16,36 @@ header, footer {
     padding: 1em 0;
 }
 
+/*フッター用*/
+#footerButton{
+    background-color: rgb(176, 176, 176);
+    color: white;
+}
+
+/*ボタン*/
+button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgb(189, 255, 255);
+    width: 40vw;
+    height: 130px;
+    object-fit: contain;
+}
+
+
+.buttonImage{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+#footerButton{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* スマートフォン用のスタイル */
 @media (max-width: 600px) {
     .container {
@@ -37,5 +67,22 @@ header, footer {
         padding: 0.5em;
         text-align: center;
         font-size: 0.8em;
+    }
+    /*フッター様*/
+    h1{
+        font-size:25px;
+    }
+    button{
+        justify-content: center;
+        display: grid;
+        width: 30vw;
+        height: 50vw;
+        font-size: 15px;
+    }
+    /*ボタンについてる画像*/
+    .buttonImage{
+        width: 25vw;
+        height: 25vw;
+        object-fit: contain;
     }
 }

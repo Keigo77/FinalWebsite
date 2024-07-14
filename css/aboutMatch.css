@@ -1,5 +1,5 @@
 
-/*ãƒ˜ãƒƒãƒ€ãƒ¼*/
+/*ヘッダー*/
 header {
     background: linear-gradient(90deg, #0056b3, #0099ff);
     color: white;
@@ -8,37 +8,35 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/*å¤§ä¼šè¦é …*/
+/*大会要項*/
 h1{
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 60px;
 }
-/*åŒºåˆ‡ã‚Š<>*/
+/*区切り*/
 h3{
     color: rgb(96, 96, 255);
     font-size: 20px;
 }
 
-/*æœ¬æ–‡*/
+/*本文*/
 body{
     color: rgb(62, 62, 62);
     font-size: 15px;
 }
 
-/*ãƒ•ãƒƒã‚¿ãƒ¼*/
+/*フッター*/
 footer{
     background-color: rgb(176, 176, 176);
     margin-top: 100px;
     color: white;
 }
 
-/*ç”»é¢é·ç§»ãƒœã‚¿ãƒ³*/
+/*ボタン*/
 button{
     display: flex;
-    /*flexã§ä¸¦ã¹ãŸã‚‚ã®ã‚’æ¨ªå‘ãã«ä½ç½®èª¿ç¯€(ã“ã“ã§ã¯2ã¤ã‚’å·¦å³ã®ç«¯ã«é…ç½®)*/
     justify-content: space-between;
-    /*flexã§ä¸¦ã¹ãŸã‚‚ã®ã‚’ç¸¦å‘ãã«ä½ç½®èª¿ç¯€*/
     align-items: center;
     font-size: 30px;
     background-color: rgb(189, 255, 255);
@@ -48,21 +46,24 @@ button{
 }
 
 
-/*ãƒœã‚¿ãƒ³ã«ã¤ã„ã¦ã‚‹ç”»åƒ*/
 .buttonImage{
     width: 150px;
     height: 150px;
     object-fit: contain;
 }
 
-/*ãƒ¬ã‚¹ãƒãƒ³ã‚·ãƒ–ãƒ‡ã‚¶ã‚¤ãƒ³*/
+#footerTable{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*レスポンシブ*/
 @media (max-width:600px){
     h1{
         font-size:25px;
     }
 
     button{
-        /*å†™çœŸã¨æ–‡å­—ã‚’ç¸¦ã«ä¸¦ã¹ã‚‹*/
         justify-content: center;
         display: grid;
         width: 30vw;

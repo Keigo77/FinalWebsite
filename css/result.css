@@ -108,6 +108,51 @@ details summary::after {
     color: #0056b3;
 }
 
+
+
+
+/*画面遷移ボタン*/
+button{
+    display: flex;
+    /*flexで並べたものを横向きに位置調節(ここでは2つを左右の端に配置)*/
+    justify-content: space-between;
+    /*flexで並べたものを縦向きに位置調節*/
+    align-items: center;
+    font-size: 30px;
+    background-color: rgb(189, 255, 255);
+    width: 40vw;
+    height: 130px;
+    object-fit: contain;
+}
+
+
+
+/*ボタンについてる画像*/
+.buttonImage{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+
+/*フッター*/
+.footerTh{
+    background-color: rgb(176, 176, 176);
+    margin-top: 100px;
+    color: white;
+    border: initial;
+    padding: initial;
+    text-align: initial;
+}
+
+#footerTable{
+    width: initial;
+    border-collapse: initial;
+    margin-top: initial;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* メディアクエリー*/
 @media (max-width: 600px) {
     h1 {
@@ -140,55 +185,25 @@ details summary::after {
     }
 }
 
-
-/*画面遷移ボタン*/
-button{
-    display: flex;
-    /*flexで並べたものを横向きに位置調節(ここでは2つを左右の端に配置)*/
-    justify-content: space-between;
-    /*flexで並べたものを縦向きに位置調節*/
-    align-items: center;
-    font-size: 30px;
-    background-color: rgb(189, 255, 255);
-    width: 40vw;
-    height: 130px;
-    object-fit: contain;
-}
-
 @media (max-width:600px){
     h1{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     button{
+        justify-content: center;
         display: grid;
-        width: 40vw;
-        height: 250px;
+        width: 35vw;
+        height: 50vw;
+        font-size: 15px;
     }
-}
 
-/*ボタンについてる画像*/
-.buttonImage{
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-}
-
-
-/*フッター*/
-.footerTh{
-    background-color: rgb(176, 176, 176);
-    margin-top: 100px;
-    color: white;
-    border: initial;
-    padding: initial;
-    text-align: initial;
-}
-
-.footerTable{
-    width: initial;
-    border-collapse: initial;
-    margin-top: initial;
+    /*ボタンについてる画像*/
+    .buttonImage{
+        width: 25vw;
+        height: 25vw;
+        object-fit: contain;
+    }
 }
 
 
